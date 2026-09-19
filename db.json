@@ -67,5 +67,16 @@
       "status": "active",
       "role": "employee"
     }
+  ],
+   "trainings": [
+    {
+      "id": 1,
+      "name": "Inducción corporativa",
+      "instructor": "María López",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-22",
+      "status": "scheduled",
+      "employeeIds": [1, 2]
+    }
   ]
 }

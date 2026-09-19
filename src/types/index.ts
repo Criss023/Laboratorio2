@@ -73,3 +73,18 @@ export interface NavItem {
   icon: string;
   allowedRoles: EmployeeRole[];
 }
+
+export type TrainingStatus = "scheduled" | "in_progress" | "completed" | "cancelled";
+
+export interface Training {
+  id: number;
+  name: string;
+  instructor: string;
+  startDate: string;   
+  endDate: string;     
+  status: TrainingStatus;
+  employeeIds: number[]; 
+}
+
+export type CreateTrainingDto = Omit<Training, "id">;
+export type UpdateTrainingDto = Partial<CreateTrainingDto>;
